@@ -1,0 +1,56 @@
+.container {
+    padding: 30px;
+}
+
+.message {
+    padding: 20px 0;
+    color: #666;
+    text-align: center;
+}
+
+.book {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: white;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    transition: all 0.5s;
+    color: #333;
+    text-decoration: none;
+}
+
+.book:hover {
+    background-color: #f3f3f3;
+}
+
+.cover {
+    width: 60px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.no_cover {
+    width: 60px;
+    height: 90px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    color: #777;
+    background-color: #eee;
+}
+
+.title {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.authors {
+    font-size: 12px;
+    color: #555;
+}
