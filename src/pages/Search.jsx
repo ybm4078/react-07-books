@@ -41,9 +41,18 @@ function Search() {
     // => 이러한 민간함 정보를 코드 상에 사용하지 않도록 존재하는 장치 => "환경변수"
 
     useEffect(() => {
+        // keyword라는 변수에 null (타입)으로 나타나는데
+        // 이걸탬플릿 리터널을 통해 string 안레 값이 찍었더니 진짜로 string인 "null"이 찍힘, undefined도 만찬가지
+
+        // 근본적으로 생각하면 keyword가 string이 없으면 (빈 문자열도 포함) 요청을 보내면 안됨
+        if (!keyword) return;
+
         fetch(
             `https://www.googleapis.com/books/v1/volumes?q=${keyword}&maxResults=20&key=${API_KEY}`,
-        );
+        )
+            .then(res => res.json())
+            .then(json => setList(json.items))
+            .catch(err => console.log(err));
     }, [])
     return <></>;
 }
