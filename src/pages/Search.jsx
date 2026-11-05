@@ -12,6 +12,7 @@ import { Link, useSearchParams } from "react-router";
 
 export const API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
 
+//
 // export default  => 파일 하나에 유일하게 1개만 "대표 수출품"으로 지정 가능
 //                    import 때 import Search from "./Search.jsx" 처럼,
 //                    유일값으로 불러옴
