@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./Search.module.css";
 import SearchBar from "../components/SearchBar.jsx";
+import { Link, useSearchParams } from "react-router";
 
 // VITE가 불러들여준 환경변수를 꺼낼 때는 function 밖에서 -> export 처리 하기 위해서
 
