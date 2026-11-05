@@ -45,6 +45,7 @@ function Search() {
             .finally(() => setLoading(false));
     }, [keyword]);
 
+    //
     // 검색 결과를 담당하는 Search 컴포넌트에서도
     // 검색이 가능하도록 설계 변경 하니,
     // Home에 있는 내용과 다르지 않음을 확인
