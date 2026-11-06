@@ -6,7 +6,7 @@ function Home() {
     return (
         <div className={styles.container}>
             <span className={styles.title}>Google Books검색</span>
-            <SearchBar />
+            <SearchBar keyword={""}/>
         </div>
     );
 }
